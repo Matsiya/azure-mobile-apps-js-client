@@ -8,6 +8,8 @@ if (target === 'Cordova') {
     module.exports = require('./cordova/sdkExports');
 } else if (target === 'Web') {
     module.exports = require('./web/sdkExports');
+} else if (target === 'ReactNative') {
+    module.exports = require('./reactNative/sdkExports');
 } else {
     throw new Error('Unsupported target');
 }
